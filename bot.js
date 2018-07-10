@@ -214,7 +214,7 @@ function play(guild, song) {
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
 
-const adminprefix = "$vip";
+const adminprefix = "Tvip";
 const devs = ['450411954511544321'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -239,6 +239,23 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 
 });
+
+client.on("message", message => {
+ if (message.content === `${prefix}viphelp`) {
+ 	
+  const embed = new Discord.RichEmbed() 
+      .setColor("#000000")
+      .setDescription(`
+${prefix}setname ⇏ تغير اسم بوت
+${prefix}setavatar ⇏ تغير صورة بوت
+${prefix}setT ⇏ تخلي بوت حالته بنفسجي
+${prefix}setgame ⇏ تخلي حالة بوت يلعب شي
+
+ `);
+   message.channel.sendEmbed(embed);
+    
+   }
+   }); 
 
 client.on("message", message => {
  if (message.content === `${prefix}help`) {
