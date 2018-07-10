@@ -27,7 +27,6 @@ client.on('ready', () => {
     client.user.setStatus("dnd")
 });
 
-const prefix = "1"
 client.on('message', async msg => { 
 	
 	if (msg.author.bot) return undefined;
