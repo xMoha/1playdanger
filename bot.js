@@ -8,27 +8,6 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const queue = new Map();
 const client = new Discord.Client();
 
-client.user.setPresence({
-  status: 'dnd',
- game: { 
-    type: 2,
-    name: '-----------------------------------',
-     details: `with your mom MR.MXM !!`,
-     url: 'https://www.twitch.tv/skwadraa',
-     state: `__________________________________`,
-    application_id: '439427922583879690',
-     assets: {
-         
-         large_image: `457571196662317057`,
-         large_text: `Maryo` ,//يلي بيظهر فصوره الكبيره
-        small_image: `457571631804710928`,
-        small_text: '2'//يلي بيظهر فصورة صغيره
-       
-    }
-
-  }
-    });
-});
 
 const prefix = "T";
 client.on('message', async msg => { // eslint-disable-line
