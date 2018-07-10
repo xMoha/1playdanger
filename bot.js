@@ -1,5 +1,3 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
 
 const Discord = require("discord.js");
 const ytdl = require("ytdl-core");
@@ -250,7 +248,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", message => {
- if (message.content === `${prefix}`) {
+ if (message.content === `${prefix}help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
